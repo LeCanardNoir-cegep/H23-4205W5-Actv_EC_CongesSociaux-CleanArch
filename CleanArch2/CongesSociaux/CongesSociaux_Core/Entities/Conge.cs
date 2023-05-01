@@ -1,13 +1,14 @@
-﻿namespace CongesSociaux_Core.Entities
+﻿using CongesSociaux_Core.Common;
+
+namespace CongesSociaux_Core.Entities
 {
-    public class Conge
+    public class Conge : ABaseEntities
     {
-        public int Id { get; set; }
         public DateTime DateDebut { get; set; }
         public int Duree { get; set; }
         public string Description { get; set; }
 
 
-        public Employe Employe { get; set; }
+        public AEmploye Employe { get; set; }
     }
 }

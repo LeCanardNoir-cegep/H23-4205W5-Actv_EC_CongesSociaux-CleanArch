@@ -1,8 +1,9 @@
-﻿namespace CongesSociaux_Core.Entities
+﻿using CongesSociaux_Core.Common;
+
+namespace CongesSociaux_Core.Entities
 {
-    public class Periode
+    public class Periode : ABaseEntities
     {
-        public int Id { get; set; }
         public string? PeriodeName { get; set; }
         public DateTime DateDebut { get; set; }
         public DateTime DateFin { get; }
